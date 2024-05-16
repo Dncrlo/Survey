@@ -11,11 +11,11 @@ input[type=radio] {
 <body>
    <form>
  Name: <input type="text" id="name" name="full name"> <br>
-Grade & Section: <input type="text" id="grade&section" name="Grade and Section"> <br>
+Grade & Section: <input type="text" id="grade" name="Grade and Section"> <br>
 <input type="submit" value="SUBMIT" onclick="hello()"> <br> 
 
 <h1> Q1. What car market do you prefer? </h1> <br>
-    <input type="radio" value="JDM"> Japanese Domestic Market (JDM) </input> <br>
+    <input type="radio" id="JDM"> Japanese Domestic Market (JDM) </input> <br>
     <input type="radio" value="EDM"> Europe Domestic Market (EDM, Euro) </input> <br>
     <input type="radio" value="USDM"> United Stated Domestic Market (USDM) </input> <br>
     
@@ -64,7 +64,8 @@ Grade & Section: <input type="text" id="grade&section" name="Grade and Section">
 <script>
 funcition hello()
 { 
-    var name=document.getElementById("name").value
+    var name=document.getElementById("name").value;
+    var name=document.getElementById("grade").value;
 
 
 }
