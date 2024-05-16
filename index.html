@@ -11,7 +11,7 @@ input[type=radio] {
 <body>
    <form>
  Name: <input type="text" id="name" name="full name"> <br>
-Grade & Section: <input type="text" id="grade" name="Grade and Section"> <br>
+Grade & Section: <input type="text" id="grade" name="grade"> <br>
 <input type="submit" value="SUBMIT" onclick="hello()"> <br> 
 
 <h1> Q1. What car market do you prefer? </h1> <br>
@@ -64,9 +64,8 @@ Grade & Section: <input type="text" id="grade" name="Grade and Section"> <br>
 <script>
 function test()
 { 
-    var name=document.getElementById("name").value;
-    var name=document.getElementById("grade").value;
-
+    var name=localStorage.setItem("name", name);
+    var grade=localStorage.setItem("grade", grade);
 
 }
     
